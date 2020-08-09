@@ -1,0 +1,302 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 200vh;
+}
+
+.bd-highlight {
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.15);
+}
+
+.heading {
+  padding-top: 30px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.d-inline-grid {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.templ {
+  -ms-grid-columns: 150px 200px auto 200px 150px;
+      grid-template-columns: 150px 200px auto 200px 150px;
+  -ms-grid-rows: 25% 100px auto;
+      grid-template-rows: 25% 100px auto;
+}
+
+.templ1 {
+  -ms-grid-columns: [first-col-line] 150px [second-col-line] 200px [third-col-line] auto [fourth-col-line] 200px [fifth-col-line] 150px [end-col-line];
+      grid-template-columns: [first-col-line] 150px [second-col-line] 200px [third-col-line] auto [fourth-col-line] 200px [fifth-col-line] 150px [end-col-line];
+  -ms-grid-rows: [first-row-line] 25% [second-row-line] 100px [third-row-line] auto [last-row-line];
+      grid-template-rows: [first-row-line] 25% [second-row-line] 100px [third-row-line] auto [last-row-line];
+}
+
+.templ2 {
+  -ms-grid-rows: [first-row-line] 25% [second-row-line middle-row-line] 25% [last-row-lin];
+      grid-template-rows: [first-row-line] 25% [second-row-line middle-row-line] 25% [last-row-lin];
+}
+
+.templ3 {
+  -ms-grid-columns: (33.33% [col-line])[3];
+      grid-template-columns: repeat(3, 33.33% [col-line]);
+}
+
+.templ4 {
+  -ms-grid-columns: 1fr 1fr 150px 1fr;
+      grid-template-columns: 1fr 1fr 150px 1fr;
+}
+
+.templ5 {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+}
+
+.templ5 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+}
+
+.templ5 .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.templ5 .sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: sidebar;
+}
+
+.templ5 .footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+.templ6 {
+  grid-template: [row1-start] "header header sidebar" 1fr [row1-end] [row2-start] "footer footer footer" 1fr [row2-end]/auto 150px auto;
+}
+
+.templ6 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+}
+
+.templ6 .sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: sidebar;
+}
+
+.templ6 .footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+.templ7 {
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.templ8 {
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  gap: 10px 10px;
+}
+
+.templ9 {
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: 1fr/repeat(3, 1fr);
+}
+
+.templ10 {
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+}
+
+.templ11 {
+  -ms-grid-rows: (100px)[1];
+  -ms-grid-columns: (200px)[3];
+      grid-template: repeat(1, 100px)/repeat(3, 200px);
+}
+
+.templ12 {
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+}
+
+.templ13 {
+  -ms-grid-rows: [row1-start] 100px [row2-start] 100px [row3-start] 100px [row3-end];
+      grid-template-rows: [row1-start] 100px [row2-start] 100px [row3-start] 100px [row3-end];
+  -ms-grid-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col5-end];
+      grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col5-end];
+}
+
+.templ13 .item-a {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: row2-start;
+      grid-row-start: row2-start;
+  grid-row-end: row3-start;
+}
+
+.templ13 .item-b {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: col4-start;
+      grid-column-end: span col4-start;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+}
+
+.templ13 .item-c {
+  grid-column: col2-start / span 2;
+  grid-row: row2-start / span row3-end;
+}
+
+.templ13 .item-d {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+}
+
+.templ13 .item-f {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+.templ13 .item-e {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 4 / 4 / 6;
+}
+
+.templ14 {
+  -ms-grid-rows: (1fr)[1];
+  -ms-grid-columns: (1fr)[4];
+      grid-template: repeat(1, 1fr)/repeat(4, 1fr);
+}
+
+.templ16 {
+  grid-auto-rows: 200px 200px;
+  grid-auto-columns: 200px 200px;
+}
+
+.templ16 .item-a {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.templ16 .item-b {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.templ16 .item-c {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+}
+
+.templ17 {
+  -ms-grid-rows: (200px)[2];
+  -ms-grid-columns: (1fr)[5];
+      grid-template: repeat(2, 200px)/repeat(5, 1fr);
+}
+
+.templ17 .item-a {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.templ17 .item-b {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.templ18 {
+  grid: 100px 300px / 3fr 1fr;
+}
+
+.templ19 {
+  grid: auto-flow dense 100px / 3fr 1fr;
+}
+
+.templ20 {
+  grid: [row1-start] "header header header" 1fr [row1-end] [row2-start] "footer footer footer" 150px [row2-end]/auto 50px auto;
+}
+
+.templ20 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+}
+
+.templ20 .footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+/*# sourceMappingURL=style.css.map */

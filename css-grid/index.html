@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Grid</title>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- here -->
+			<h3 class="heading">Grid container</h3>
+			<div class="d-grid bd-highlight p-2">I'm a grid container</div>
+			<h3 class="heading">Inline grid container</h3>
+			<div class="d-inline-grid bd-highlight p-2">
+				I'm an inline grid container
+			</div>
+			<h3 class="heading">grid-template-columns and grid-template-rows</h3>
+			<div class="d-grid templ h-400 bd-highlight">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+			</div>
+			<h3 class="heading">With line name</h3>
+			<div class="d-grid templ1 h-400 bd-highlight">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+			</div>
+			<h3 class="heading">With multiple names</h3>
+			<div class="d-grid bd-highlight templ2 h-200">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+			</div>
+			<h3 class="heading">repeat()</h3>
+			<div class="d-grid bd-highlight templ3">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">Set the size of a track as a fraction</h3>
+			<div class="d-grid bd-highlight templ4">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+			</div>
+			<h3 class="heading">grid-template-areas</h3>
+			<div class="d-grid bd-highlight templ5 h-400">
+				<div class="p-2 bd-highlight header">Header</div>
+				<div class="p-2 bd-highlight main">Main</div>
+				<div class="p-2 bd-highlight sidebar">Sidebar</div>
+				<div class="p-2 bd-highlight footer">footer</div>
+			</div>
+			<h3 class="heading">grid-template</h3>
+			<div class="d-grid bd-highlight templ6 h-400">
+				<div class="p-2 bd-highlight header">Header</div>
+				<div class="p-2 bd-highlight sidebar">Sidebar</div>
+				<div class="p-2 bd-highlight footer">Footer</div>
+			</div>
+			<h3 class="heading">column-gap, row-gap</h3>
+			<div class="d-grid bd-highlight templ7">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 4</div>
+				<div class="p-2 bd-highlight">Grid item 5</div>
+				<div class="p-2 bd-highlight">Grid item 6</div>
+			</div>
+			<h3 class="heading">gap</h3>
+			<div class="d-grid bd-highlight templ8">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">Justify items</h3>
+			<div class="d-grid bd-highlight templ9" style="justify-items: start;">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight templ9 mt-3"
+				style="justify-items: center;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div class="d-grid bd-highlight mt-3 templ9" style="justify-items: end;">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight templ9 mt-3"
+				style="justify-items: stretch;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">align items</h3>
+			<div
+				class="d-grid bd-highlight templ10 h-200"
+				style="align-items: start;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ10 h-200"
+				style="align-items: center;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ10 h-200"
+				style="align-items: end;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ10 h-200"
+				style="align-items: stretch;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">Place items</h3>
+			<div
+				class="d-grid bd-highlight templ10 h-200"
+				style="place-items: center center;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">Justify content</h3>
+			<div class="d-grid bd-highlight templ11" style="justify-content: start;">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight templ11 mt-3"
+				style="justify-content: center;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ11"
+				style="justify-content: end;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ11"
+				style="justify-content: stretch;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ11"
+				style="justify-content: space-around;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ11"
+				style="justify-content: space-between;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ11"
+				style="justify-content: space-evenly;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">Align content</h3>
+			<div
+				class="d-grid bd-highlight templ12 h-400"
+				style="align-content: start;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="align-content: center;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="align-content: end;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="align-content: stretch;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="align-content: space-around;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="align-content: space-between;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="align-content: space-evenly;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">Place content</h3>
+			<div
+				class="d-grid bd-highlight mt-3 templ12 h-400"
+				style="place-content: center center;"
+			>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<h3 class="heading">
+				grid-column-start, grid-column-end, grid-row-start, grid-row-end
+			</h3>
+			<div class="d-grid bd-highlight templ13">
+				<div class="p-2 bd-highlight item-a">Grid item A</div>
+				<div class="p-2 bd-highlight item-b">Grid item B</div>
+			</div>
+			<h3 class="heading">grid-column, grid-row</h3>
+			<div class="d-grid bd-highlight templ13">
+				<div class="p-2 bd-highlight item-c">Grid item C</div>
+				<div class="p-2 bd-highlight item-d">Grid item D</div>
+			</div>
+			<h3 class="heading">grid-area</h3>
+			<div class="d-grid bd-highlight templ13">
+				<div class="p-2 bd-highlight item-e">Grid item E</div>
+				<div class="p-2 bd-highlight item-f">Grid item F</div>
+			</div>
+			<h3 class="heading">justify-self</h3>
+			<div class="d-grid bd-highlight templ14">
+				<div class="p-2 bd-highlight" style="justify-self: start;">
+					Grid item 1
+				</div>
+				<div class="p-2 bd-highlight" style="justify-self: center;">
+					Grid item 2
+				</div>
+				<div class="p-2 bd-highlight" style="justify-self: end;">
+					Grid item 3
+				</div>
+				<div class="p-2 bd-highlight" style="justify-self: stretch;">
+					Grid item 3
+				</div>
+			</div>
+			<h3 class="heading">align-self</h3>
+			<div class="d-grid bd-highlight templ14 h-200">
+				<div class="p-2 bd-highlight" style="align-self: start;">
+					Grid item 1
+				</div>
+				<div class="p-2 bd-highlight" style="align-self: center;">
+					Grid item 2
+				</div>
+				<div class="p-2 bd-highlight" style="align-self: end;">
+					Grid item 3
+				</div>
+				<div class="p-2 bd-highlight" style="align-self: stretch;">
+					Grid item 3
+				</div>
+			</div>
+			<h3 class="heading">place-self</h3>
+			<div class="d-grid bd-highlight h-200">
+				<div class="p-2 bd-highlight" style="place-self: center center;">
+					Grid item 1
+				</div>
+			</div>
+			<h3 class="heading">grid-auto-columns, grid-auto-rows</h3>
+			<div class="d-inline-grid bd-highlight templ16">
+				<div class="p-2 bd-highlight item-a">Grid item 1</div>
+				<div class="p-2 bd-highlight item-b">Grid item 2</div>
+				<div class="p-2 bd-highlight item-c">Grid item 3</div>
+			</div>
+			<h3 class="heading">grid-auto-flow</h3>
+			<div class="d-grid bd-highlight templ17" style="grid-auto-flow: row;">
+				<div class="p-2 bd-highlight item-a">Grid item 1</div>
+				<div class="p-2 bd-highlight item-b">Grid item 2</div>
+				<div class="p-2 bd-highlight item-c">Grid item 3</div>
+				<div class="p-2 bd-highlight item-d">Grid item 4</div>
+				<div class="p-2 bd-highlight item-e">Grid item 5</div>
+			</div>
+			<div
+				class="d-grid bd-highlight templ17 mt-3"
+				style="grid-auto-flow: column;"
+			>
+				<div class="p-2 bd-highlight item-a">Grid item 1</div>
+				<div class="p-2 bd-highlight item-b">Grid item 2</div>
+				<div class="p-2 bd-highlight item-c">Grid item 3</div>
+				<div class="p-2 bd-highlight item-d">Grid item 4</div>
+				<div class="p-2 bd-highlight item-e">Grid item 5</div>
+			</div>
+			<h3 class="heading">grid</h3>
+			<div class="d-grid templ18 bd-highlight">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div class="d-grid templ19 bd-highlight mt-3">
+				<div class="p-2 bd-highlight">Grid item 1</div>
+				<div class="p-2 bd-highlight">Grid item 2</div>
+				<div class="p-2 bd-highlight">Grid item 3</div>
+			</div>
+			<div class="d-grid templ20 bd-highlight mt-3">
+				<div class="p-2 bd-highlight header">Grid item 1</div>
+				<div class="p-2 bd-highlight footer">Grid item 2</div>
+			</div>
+		</div>
+	</body>
+</html>
